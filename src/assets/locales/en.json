@@ -1,0 +1,95 @@
+{
+	"shared": {
+		"cities": {
+			"amman": "Amman, Jordan",
+			"riyadh": "Riyadh, Saudi Arabia",
+			"dubai": "Dubai, United Arab Emirates"
+		},
+		"submit": "SUBMIT"
+	},
+	"nav": {
+		"company": "Company",
+		"quick-links": "Quick Links",
+		"about": "About",
+		"team": "Team",
+		"partners": "Partners and Key Clients",
+		"offices": "Offices",
+		"contact-us": "Contact Us",
+		"agency": "Agency",
+		"production-house": "Production House",
+		"careers": "Careers"
+	},
+	"home": {
+		"about": {
+			"title": "ABOUT UPT",
+			"facts": {
+				"story": "UPT Story",
+				"story-desc": "UPT House was established by experts at leading firms in the Filmmaking and digital marketing industry. Seasoned Marketers and experienced filmmakers engineers joined forces to bring their passion & talents to life.",
+				"vision": "Vision & Mission",
+				"vision-desc": "UPT House was established by experts at leading firms in the Filmmaking and digital marketing industry. Seasoned Marketers and experienced filmmakers engineers joined forces to bring their passion & talents to life.",
+				"why": "Why UPT",
+				"why-desc": "Because we like to spice things up, We put all jokes aside, we're a creatives who like to get their hands dirty and believe in \"We rise by lifting others\" because having a great company with big brands and startups leads to great work.",
+				"why-desc2": "Established in Amman with offices across three countries, UPT House was built on the basis of creating sustainable solutions tailored to each client's needs.\nAt UPT House, we are committed to empower brands by providing full-fledged services centered around the foundation of growth to succeed and be socially and digitally connected to the world to achieve a scalable business with powerful and impactful solutions.",
+				"why-desc3": "In a span of Eight years, three countries and with true passion and dedication UPT House has created a new unseen scene for video production, marketing and advertising.\nOur services can build any brand from scratch and lead businesses to their utmost success and desired target.",
+
+
+				"different": "WHAT MAKES US DIFFERENT",
+				"different-desc": "UPT House was established by experts at leading firms in the Filmmaking and digital marketing industry. Seasoned Marketers and experienced filmmakers engineers joined forces to bring their passion & talents to life."
+			},
+			"stats": {
+				"pounds-equipment": "POUNDS OF EQUIPMENT",
+				"finished-photosessions": "FINISHED PHOTOSESSIONS",
+				"happy-clients": "HAPPY CLIENTS",
+				"studio-sessions": "STUDIO SESSIONS",
+				"thousand-viewes": "THOUSAND VIEWES MONTHLY"
+			}
+		},
+		"team": {
+			"title": "MEET THE TEAM"
+		},
+		"partners": {
+			"title1": "Our Partners",
+			"title2": "Our Partners and Key Clients"
+		},
+		"offices": {
+			"title": "Our Offices"
+		},
+		"contact-us": {
+			"title": "Contact Us",
+			"sub-title": "We'd love to hear from you!",
+			"desc": "Have a new project in the works? We'd love to hear all about it. We're passionate about what we do and always excited to learn more about you and your business. Let's do something great together.",
+			"form": {
+				"full-name": "Full name",
+				"email": "E-mail",
+				"phone": "Phone number",
+				"message": "Tell us more about your business"
+			}
+		}
+	},
+	"agency": {
+		"title": "Top 3 projects this quarter",
+		"more-projects": "Find more about our work",
+		"about-title": "About UPT Agency"
+	},
+	"production-house": {
+		"title": "Top 3 projects this quarter",
+		"more-projects": "Find more about our work",
+		"about-title": "About UPT Production House"
+	},
+	"careers": {
+		"title": "Be a part of UPT House family!",
+		"desc": "Join us in empowering businesses to reach the widest possible audience through the development of portals & websites that convey vision and image to the prospective client, customer, and employee.",
+		"cta": "SEE OPEN POSITIONS",
+		"apply": "APPLY",
+		"location": "Location",
+		"level": "Level"
+	},
+	"footer": {
+		"slogan": "#weriseBLO",
+		"copyrights": "ALL RIGHTS RESERVED"
+	},
+	"404": {
+		"msg": "Ops... The page you're looking for was not found",
+		"go-home": "GO HOME"
+	}
+}

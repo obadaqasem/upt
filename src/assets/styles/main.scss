@@ -1,0 +1,221 @@
+/* VARIABLES BELOW */
+:root{
+  --primary: #FECA06;
+  --secondary: #111211;
+}
+
+/* GLOBAL FONTS BELOW */
+@font-face{
+  font-family: "Montserrat";
+  src: URL("../fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+}
+@font-face{
+  font-family: "LemonMilk";
+  src: URL("../fonts/LemonMilk/LemonMilk-Regular.otf") format("truetype");
+}
+@font-face{
+  font-family: "Cairo";
+  src: URL("../fonts/Cairo/Cairo-Regular.ttf") format("truetype");
+}
+
+/* SHARED STYLES BELOW */
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  overflow: hidden;
+}
+
+*{ 
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  box-sizing: border-box;
+  word-break: break-word;
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #7d7d7d;
+    opacity: 1; /* Firefox */
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #7d7d7d;
+  }
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #7d7d7d;
+  }
+}
+
+/* LTR STYLES BELOW */
+body[dir="ltr"] {
+  font-family: 'Montserrat',Sans-Serif;
+  .section-header{
+    &::before{
+      left: 0;
+      border-right-width: 0;
+    }
+  }
+}
+
+/* RTL STYLES BELOW */
+body[dir="rtl"] {
+  font-family: 'Cairo',Sans-Serif;
+  .header-font{
+    font-family: 'Cairo',Sans-Serif;
+  }
+  .section-header{
+    &::before{
+      right: 0; 
+      border-left-width: 0;
+    }
+  }
+}
+
+.wrapper{
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+.transition-300{
+  transition: all .3s ease;
+}
+.shadow{
+  box-shadow: 2px 2px 12px 4px rgba(0,0,0,0.1);
+}
+.header-font{
+  font-family: 'LemonMilk',Sans-Serif;
+}
+.force-lemon-milk{
+  font-family: 'LemonMilk',Sans-Serif!important;
+}
+.force-montserrat{
+  font-family: 'Montserrat',Sans-Serif!important;
+}
+.force-cairo{
+  font-family: 'Cairo',Sans-Serif!important;
+}
+.force-ltr{
+  direction: ltr!important;
+}
+.section-header{
+  padding: 25px 30px;
+  position: relative;
+  &::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    border: 3px solid var(--primary);
+    width: 17px;
+  }
+  // p{
+    // text-shadow: 0 0px 8px rgba(0,0,0,0.5);
+  // }
+}
+.fancy-btn{
+  cursor: pointer;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  span{
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--primary);
+    transform: translateY(150%);
+    // border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    // transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+  }
+  &:hover{
+    color: var(--secondary);
+  }
+  &:hover span{
+    transform: translateY(0) scale(2);
+  }
+  span:nth-child(1){
+    --n: 1;
+  }
+  span:nth-child(2){
+    --n: 2;
+  }
+  span:nth-child(3){
+    --n: 3;
+  }
+  span:nth-child(4){
+    --n: 4;
+  }
+}
+input{
+  outline: none;
+  border: 1px solid #DDDFE1;
+  background-color: #FFF;
+  padding: 0 16px;
+  transition: all .3s ease;
+  &:focus{
+    border-color: #c5c5c5;
+  }
+  &:disabled{
+    background-color: rgba(106, 112, 126, 0.1);
+  }
+}
+textarea{
+  outline: none;
+  border: 1px solid #DDDFE1;
+  background-color: #FFF;
+  padding: 12px 16px;
+  transition: all .3s ease;
+  &:focus{
+    border-color: #c5c5c5;
+  }
+  &:disabled{
+    background-color: rgba(106, 112, 126, 0.1);
+  }
+}
+select{
+  outline: none;
+  border: 1px solid #DDDFE1;
+  background-color: #FFF;
+  padding: 0 12px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
+select::-ms-expand {
+  display: none;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@media only screen and (max-width: 768px){
+  .section-header{
+    padding: 18px 26px;
+    p{
+      font-size: 28px;
+    }
+  }
+}
+
+@media only screen and (max-width: 575px){
+  .section-header{
+    padding: 16px 22px;
+    p{
+      font-size: 24px;
+    }
+  }
+}
